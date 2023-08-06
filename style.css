@@ -1,0 +1,398 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;  
+}
+
+.row{
+    width: 100%;
+}
+
+.row::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+
+ /* different deviecs grip starts here */
+
+/* small devices(portrait tablets and large phones,576px and  up)*/
+@media (min-width: 576px)
+{
+
+
+    .col-sm-1{
+        width: 8.33%
+    }
+    .col-sm-2{
+        width: 16.33%
+    }
+    .col-sm-3{
+        width: 25%
+    }
+    .col-sm-4{
+        width: 33.33%
+    }
+    .col-sm-5{
+        width: 41.66%
+    }
+    .col-sm-6{
+        width: 50%
+    }
+    .col-sm-7{
+        width: 58.33%
+    }
+    .col-sm-8{
+        width: 66.66%
+    }
+    .col-sm-9{
+        width: 75%
+    }
+    .col-sm-10{
+        width: 83.33%
+    }
+    .col-sm-11{
+        width: 91.66%
+    }
+    .col-sm-12{
+        width: 100%
+    }
+}
+
+
+
+/* medium devices(portrait tablets and large phones,768px and  up)*/
+@media (min-width: 768px){
+    .col-md-1{
+        width: 8.33%
+    }
+    .col-md-2{
+        width: 16.33%
+    }
+    .col-md-3{
+        width: 25%
+    }
+    .col-md-4{
+        width: 33.33%
+    }
+    .col-md-5{
+        width: 41.66%
+    }
+    .col-md-6{
+        width: 50%
+    }
+    .col-md-7{
+        width: 58.33%
+    }
+    .col-md-8{
+        width: 66.66%
+    }
+    .col-md-9{
+        width: 75%
+    }
+    .col-md-10{
+        width: 83.33%
+    }
+    .col-md-11{
+        width: 91.66%
+    }
+    .col-md-12{
+        width: 100%
+    }
+}
+
+
+/* large devices(portrait tablets and large phones,992px and  up)*/
+@media (min-width: 992px){
+
+    .logo-div{
+        text-align: left;
+    }
+
+     nav ul{
+        display: flex;
+       justify-content: flex-end;
+       margin-top: 10px;
+     }
+      nav ul li a {
+       margin: 0px  -2px;
+       background: transparent;
+    } 
+    
+
+    .col-lg-1{
+        width: 8.33%
+    }
+    .col-lg-2{
+        width: 16.33%
+    }
+    .col-lg-3{
+        width: 25%
+    }
+    .col-lg-4{
+        width: 33.33%
+    }
+    .col-lg-5{
+        width: 41.66%
+    }
+    .col-lg-6{
+        width: 50%
+    }
+    .col-lg-7{
+        width: 58.33%
+    }
+    .col-lg-8{
+        width: 66.66%
+    }
+    .col-lg-9{
+        width: 75%
+    }
+    .col-lg-10{
+        width: 83.33%
+    }
+    .col-lg-11{
+        width: 91.66%
+    }
+    .col-lg-12{
+        width: 100%
+    }
+}
+ /* different deviecs grip ends here */
+
+ /* Header section start here */
+
+header{
+    background-color: gray;
+    text-align: center;
+    padding: 0% 1%; 
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 2px solid rgb(248, 245, 245);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    padding: 9px;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    transition: .3s;
+    line-height: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover{
+ 
+    background-color: rgba(0,0,0,0.5);
+}
+
+ /* Header section ends here */
+
+ /* main section start here */
+
+ #banner{
+    background-image: url("img/dan-gold-4_jhDO54BYg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ }
+ .banner-content{
+    padding: 50px 10px;
+    text-align: center;
+ }
+ .banner-content h1{
+   background-color: rgba(255,255,0,0.804);
+   width: 90%;
+   margin: 15px auto;
+   font-size: 3rem ;
+   border-radius: 10px;
+   padding: 10px;
+   font-family: 'Handlee', cursive;
+ }
+ .banner-content p{
+    width: 320px;
+    margin: 15px auto;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(39, 125, 40, 0.804);
+ }
+ .banner-content .btn{
+    border: none;
+    width: 160px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    transition: .4s;
+ }
+ .banner-content .btn:hover{
+    transform: scale(1.2);
+ }
+
+ /* <!-- about us section start here --> */
+
+ #about{
+    padding: 1%;
+    text-align: center;
+ }
+ .dotted-hr{
+    width: 85px;
+    margin: 10px auto;
+    border: 4px dotted;
+    border-bottom: none;
+    margin-bottom: 20px;
+
+ }
+ .about-content h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+ }
+
+ .about-content p{
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    word-spacing: 2px;
+   
+ }
+ /* <!-- about us section ends here --> */
+
+ /* food menu start here */
+
+ #food{
+    /* padding: 1%; */
+ }
+  .card{
+  transition: 0.3s;
+
+  
+ } 
+ .card img{
+    width: 100%;
+    height: 300px;
+ }
+ .card-body{
+    text-align: center;
+   
+   
+ }
+ .card-body img{
+    display: block;
+ }
+
+ .item-desc {
+    background-color: rgba(156,156,56,556);
+    padding: 3 5px;
+    height: 150px;
+   
+ }
+ .item-desc > p{
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2px 0px;
+    font-weight: bold;
+    padding-top: 13px;
+ }
+ .item-name{
+   background: green;
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: white;
+ }
+ .card:hover{
+    box-shadow: 0px 4px 8px 5px black;
+    transform: scale(1.02);
+ }
+
+ /* food menu ends here */
+
+ /* contact section start here */
+
+ #contact{
+   padding: auto;
+    background: rgb(49, 45, 45);
+ }
+ .contact-details{
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+ }
+ .map{
+    width: 100%;
+    height: 250px;
+ }
+ .contact-details p, address{
+    font-size: 1rem;
+    padding: 5px 0px;
+ }
+ .me{
+    margin-top: 20px;
+    font-size: 1.5rem;color: rgb(60, 192, 93);
+    font-weight: bolder;
+ }
+
+ /* footer start here */
+
+ footer{
+    background-color: rgb(111, 111, 182);
+    padding: 1%;
+ }
+ footer p{
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+ }
+ .social-media {
+  text-align: center;
+  margin-bottom: 20px;
+ }
+
+ .social-media .btn{
+    padding: 4px 10px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 5px;
+ }
